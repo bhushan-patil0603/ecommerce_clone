@@ -1,12 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  border: 0 solid #e5e7eb;
 }
 html,body{
   height: 100%;
   width: 100%;
+  background-color: #171717;
+  border: 0 solid #e5e7eb;
 }
-#root{
-  height: 100%;
-  width: 100%;
+
+@keyframes marquee {
+  0% {
+      transform: translateX(0)
+  }
+
+  to {
+      transform: translateX(-100%)
+  }
+}
+.animate-carousel {
+  animation: marquee 30s linear infinite
 }
