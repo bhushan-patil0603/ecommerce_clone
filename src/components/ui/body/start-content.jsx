@@ -27,7 +27,10 @@ export const Start_content = () => {
 			</div>
 
 			<div className="md:col-span-2 row-span-1">
-				<a className="relative w-full h-full block aspect-square" href="/">
+				<Link
+					className="relative w-full h-full block aspect-square"
+					to={{ pathname: "/" }}
+				>
 					<div className="relative w-full h-full  flex justify-center items-center bg-white dark:bg-black border  hover:border-blue-600 border-neutral-200 dark:border-neutral-800 rounded-lg">
 						<img
 							className="relative w-full h-full object-contain hover:scale-105 duration-300"
@@ -43,11 +46,14 @@ export const Start_content = () => {
 							</div>
 						</div>
 					</div>
-				</a>
+				</Link>
 			</div>
 
 			<div className="md:col-span-2 row-span-1">
-				<a className="relative w-full h-full block aspect-square" href="/">
+				<Link
+					className="relative w-full h-full block aspect-square"
+					to={{ pathname: "/" }}
+				>
 					<div className="relative w-full h-full  flex justify-center items-center bg-white dark:bg-black border  hover:border-blue-600 border-neutral-200 dark:border-neutral-800 rounded-lg">
 						<img
 							className="relative w-full h-full object-contain hover:scale-105 duration-300"
@@ -68,7 +74,7 @@ export const Start_content = () => {
 							</div>
 						</div>
 					</div>
-				</a>
+				</Link>
 			</div>
 		</section>
 	);

@@ -39,22 +39,22 @@ export const Navbar = () => {
 			</div>
 			<div className="flex justify-center items-center w-full md:w-[33.33333%] md:justify-start text-white">
 				<div className="bg-black h-10 w-10 flex justify-center items-center border-white border-solid border rounded-xl">
-					<a href="/">
+					<Link to={{ pathname: "/" }}>
 						<LogoSvg />
-					</a>
+					</Link>
 				</div>
 				<p className="text-white text-sm font-[700] ml-2 md:hidden lg:block">
 					ACME STORE
 				</p>
 				<ul className="hidden md:flex gap-4 text-[#8F8F8F] text-lg font-normal ml-4">
 					<li>
-						<a href="/allImages">All</a>
+						<Link to={{ pathname: "/allImages" }}>All</Link>
 					</li>
 					<li>
-						<a href="/">Shirts</a>
+						<Link to={{ pathname: "/" }}>Shirts</Link>
 					</li>
 					<li>
-						<a href="/">Stickers</a>
+						<Link to={{ pathname: "/" }}>Stickers</Link>
 					</li>
 				</ul>
 			</div>

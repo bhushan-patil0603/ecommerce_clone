@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 export const Footer = () => {
 	return (
 		<section className="text-neutral-300 text-sm border-t border-neutral-200 dark:border-neutral-700 py-6">
@@ -8,10 +9,10 @@ export const Footer = () => {
 					reserved.
 				</p>
 				<hr className="hiddden md:inline-block w-[1px] border-l border-neutral-700" />
-				<a href="/">View the source</a>
-				<a className="md:ml-auto" href="/">
+				<Link to={{ pathname: "/" }}>View the source</Link>
+				<Link className="md:ml-auto" to={{ pathname: "/" }}>
 					Created by ▲ Vercel
-				</a>
+				</Link>
 			</div>
 		</section>
 	);
