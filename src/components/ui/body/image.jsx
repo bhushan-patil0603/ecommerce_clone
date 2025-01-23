@@ -16,7 +16,7 @@ export const Image = ({ obj }) => {
 					/>
 					<div className="absolute bottom-0 left-0 w-full px-4 pb-4 flex items-center">
 						<div className="flex items-center border rounded-full p-1 text-[#ffffff] text-xs font-semibold dark:bg-black">
-							<h3 className="mx-3">Acme Circles T-Shirt</h3>
+							<h3 className="mx-3 line-clamp-2">Acme Circles T-Shirt</h3>
 							<p className="bg-[#2563eb] rounded-full p-[.4rem]">
 								${obj?.price} USD
 							</p>

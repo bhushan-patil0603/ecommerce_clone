@@ -16,8 +16,8 @@ export const Start_content = () => {
 						/>
 						<div className="absolute bottom-0 left-0 w-full px-4 pb-4 flex items-center">
 							<div className="flex items-center border rounded-full p-1 text-[#ffffff] text-[12px] font-bold dark:bg-black">
-								<h3 className="mx-3">Acme Circles T-Shirt</h3>
-								<p className="bg-[#2563eb] rounded-full p-[.4rem]">
+								<h3 className="mx-3 line-clamp-2 flex-grow pl-2 leading-none tracking-tight">Acme Circles T-Shirt</h3>
+								<p className="flex-none rounded-full bg-blue-600 p-2 text-white">
 									$20.00 USD
 								</p>
 							</div>
@@ -37,10 +37,10 @@ export const Start_content = () => {
 							src="assets/images/bag-1-dark.avif"
 							alt=""
 						/>
-						<div className="absolute bottom-0 left-0 w-full px-4 pb-4 flex items-center">
+						<div className="absolute bottom-0 left-0 w-full px-4 pb-4 flex">
 							<div className="flex items-center border rounded-full p-1 text-[#ffffff] text-[12px] font-bold dark:bg-black">
-								<h3 className="mx-3">Acme Circles T-Shirt</h3>
-								<p className="bg-[#2563eb] rounded-full p-[.4rem]">
+								<h3 className="mx-3 line-clamp-2 flex-grow pl-2 leading-none tracking-tight">Acme Circles T-Shirt</h3>
+								<p className="flex-none rounded-full bg-blue-600 p-2 text-white">
 									$20.00 USD
 								</p>
 							</div>
@@ -60,10 +60,10 @@ export const Start_content = () => {
 							src="assets/images/cup-black.avif"
 							alt=""
 						/>
-						<div className="absolute bottom-0 left-0 flex w-full px-4 pb-4 @container/label lg:px-20 lg:pb-[35%]">
+						<div className="absolute bottom-0 left-0 flex w-full px-4 pb-4 lg:px-20">
 							<div className="flex items-center rounded-full border bg-white/70 p-1 text-xs font-semibold text-black backdrop-blur-md dark:border-neutral-800 dark:bg-black/70 dark:text-white">
 								<h3 className="mr-4 line-clamp-2 flex-grow pl-2 leading-none tracking-tight">
-									Acme testing T-Shirt
+									Acme cup
 								</h3>
 								<p className="flex-none rounded-full bg-blue-600 p-2 text-white">
 									$20.00

@@ -1,6 +1,9 @@
 import React from "react";
 import { Image } from "./image";
-export const Sliding_content = ({ obj1 }) => {
+import { useContext } from "react";
+import { DataContext } from "../../../service";
+export const Sliding_content = () => {
+	const obj1=useContext(DataContext);
 	return (
 		<section className="w-full overflow-x-auto pb-4">
 			<ul className="flex justify-center items-center gap-5 animate-carousel">

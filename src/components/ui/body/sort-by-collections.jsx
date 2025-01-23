@@ -1,14 +1,36 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Skeleton } from "./sorting-skeleton";
-export const MensClothing = ({ item }) => {
-	return <Skeleton item={item} />;
+import { DataContext } from "../../../service";
+
+export const getData = () => {
+	return useContext(DataContext);
+}
+
+export const MensClothing = () => {
+	const data = getData();
+	const mens = data.filter((item) => {
+		return item.category === "men's clothing";
+	});
+	return <Skeleton item={mens} />;
 };
-export const WomensClothing = ({ item }) => {
-	return <Skeleton item={item} />;
+export const WomensClothing = () => {
+	const data = getData();
+	const womens = data.filter((item) => {
+		return item.category === "women's clothing";
+	});
+	return <Skeleton item={womens} />;
 };
-export const Electronics = ({ item }) => {
-	return <Skeleton item={item} />;
+export const Electronics = () => {
+	const data = getData();
+	const electronics = data.filter((item) => {
+		return item.category === "electronics";
+	});
+	return <Skeleton item={electronics} />;
 };
-export const Jewelery = ({ item }) => {
-	return <Skeleton item={item} />;
+export const Jewelery = () => {
+	const data = getData();
+	const Jeweleries = data.filter((item) => {
+		return item.category === "jewelery";
+	});
+	return <Skeleton item={Jeweleries} />;
 };

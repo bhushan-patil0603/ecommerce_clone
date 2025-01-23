@@ -36,50 +36,36 @@ function App() {
 		getdata();
 	}, []);
 
-	useEffect(() => {
-		console.log(data);
-	}, [data]);
+	// useEffect(() => {
+	// 	console.log(data);
+	// }, [data]);
 
-	const mens = data.filter((item) => {
-		return item.category === "men's clothing";
-	});
-	const womens = data.filter((item) => {
-		return item.category === "women's clothing";
-	});
-
-	const electronics = data.filter((item) => {
-		return item.category === "electronics";
-	});
-
-	const Jeweleries = data.filter((item) => {
-		return item.category === "jewelery";
-	});
 
 	return (
 		<>
 			<Router>
 				<Navbar />
 				<Routes>
-					<Route path="/" element={<Home item={data} />} />
+					<Route path="/" element={<Home />} />
 					<Route path="/about" element={<About />} />
 					<Route path="/shipping" element={<Shipping />} />
 					<Route path="/privacy" element={<Privacy />} />
 					<Route path="/terms" element={<Terms />} />
 					<Route path="/FAQ" element={<FAQ />} />
-					<Route path="/allImages" element={<AllImages item={data} />} />
-					<Route path="/jewelery" element={<Jewelery item={Jeweleries} />} />
-					<Route path="/menscloth" element={<MensClothing item={mens} />} />
+					<Route path="/allImages" element={<AllImages />} />
+					<Route path="/jewelery" element={<Jewelery />} />
+					<Route path="/menscloth" element={<MensClothing />} />
 					<Route
 						path="/womenscloth"
-						element={<WomensClothing item={womens} />}
+						element={<WomensClothing />}
 					/>
 					<Route
 						path="/elctronics"
-						element={<Electronics item={electronics} />}
+						element={<Electronics />}
 					/>
-					<Route path="/trending" element={<Trending item={data} />} />
-					<Route path="/price-hi-to" element={<PriceHiToLow item={data} />} />
-					<Route path="/price-lo-to" element={<PriceLowToHi item={data} />} />
+					<Route path="/trending" element={<Trending />} />
+					<Route path="/price-hi-to" element={<PriceHiToLow />} />
+					<Route path="/price-lo-to" element={<PriceLowToHi />} />
 					<Route path="/selected" element={<Selected item={data} />} />
 					<Route path="/searchresult" element={<SearchResult item={data} />} />
 				</Routes>

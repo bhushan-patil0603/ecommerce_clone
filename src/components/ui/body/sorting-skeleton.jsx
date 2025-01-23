@@ -12,6 +12,8 @@ export const Skeleton = ({ item }) => {
 	function toggleDivSort() {
 		setIsTogglesort(!isTogglesort);
 	}
+
+	
 	return (
 		<section className="w-full">
 			<div className="flex gap-4 p-4 flex-col md:flex-row">

@@ -3,10 +3,8 @@ import { Info } from "./info";
 import { useLocation } from "react-router-dom";
 export const Selected = ({ item }) => {
 	const location = useLocation();
-	console.log(location);
 
 	const stObj = location.state || {};
-	console.log(stObj);
 
 	let obj;
 	let row;
